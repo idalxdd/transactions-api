@@ -7,7 +7,7 @@
     "dev": "tsx watch src/server.ts",
     "knex": "node --no-warnings --import tsx ./node_modules/knex/bin/cli.js --knexfile ./knexfile.ts",
     "lint": "eslint src --ext .ts --fix",
-    "build": "tsup src",
+    "build": "tsup src --out-dir build",
     "test": "vitest"
   },
   "keywords": [],
@@ -28,6 +28,8 @@
     "fastify": "^4.25.2",
     "knex": "^3.1.0",
     "sqlite3": "^5.1.7",
+    "supertest": "^6.3.4",
+    "vitest": "^1.2.1",
     "zod": "^3.22.4"
   }
 }
